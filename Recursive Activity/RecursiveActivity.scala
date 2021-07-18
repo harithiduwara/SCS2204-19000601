@@ -1,4 +1,4 @@
-object act1 extends App{
+object RecursiveActivity extends App{
 	
 def gcd(a:Int, b:Int):Int = b match{
 	case 0 => a
