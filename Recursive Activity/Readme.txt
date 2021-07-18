@@ -26,3 +26,9 @@ For example sum(5) should print 15
 Each subsequent number is the sum of the previous two. 
 
 Write a recursive function print fist n Fibonacci numbers for given n.
+
+
+
+-University of Colombo School of Computing-
+-Harith Iduwara-
+-19000601-
