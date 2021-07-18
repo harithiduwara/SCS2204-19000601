@@ -76,13 +76,13 @@ println(odd(98))
 
 println("\nQestion 5")
 
-def getEvenAddition(n:Int, m:Int=1):Int = m match {
+def EvenAddition(n:Int, m:Int=1):Int = m match {
     case m if(m==n) => 0
-    case m if(even(m)) => m+getEvenAddition(n,m+1)
-    case m => getEvenAddition(n,m+1)
+    case m if(even(m)) => m+EvenAddition(n,m+1)
+    case m => EvenAddition(n,m+1)
 }
 
-println(getEvenAddition(10))
+println(EvenAddition(10))
 
 def getFib(n:Int):Int = n match{
     case 0 => 0
