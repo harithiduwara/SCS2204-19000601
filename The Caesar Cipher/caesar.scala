@@ -18,4 +18,14 @@ object caesar extends App{
     val se= cipher(de, fi, 4, alphabet)
     print(se)
 
+    println("\n")
+
+    val fii= cipher(en, Message, 3, alphabet)
+    print(fii)
+
+    println("\n")
+
+    val see= cipher(de, fii, 3, alphabet)
+    print(see)
 }
+
