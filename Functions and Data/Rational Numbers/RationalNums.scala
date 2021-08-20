@@ -2,7 +2,7 @@ class Rational(x: Int, y: Int){
     def n = x
     def d =y
 
-    def neg = new Rational(-this.numer, d)
+    def neg = new Rational(-this.n, d)
 
     def sub(r:Rational) = new Rational(this.n*r.d - r.n*this.d, this.d*r.d)
 
