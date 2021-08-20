@@ -12,8 +12,8 @@ class Rational(x: Int, y: Int){
 }
 
 object RationalNums extends App{
-    val a= new Rational(6, 3)
-    val b= new Rational(5, 9)
-    val c= new Rational(4, 1)
-    println((a-b-c).toString())
+    val x= new Rational(3, 4)
+    val y= new Rational(5, 8)
+    val z= new Rational(2, 7)
+    println((x-y-z).toString())
 }
