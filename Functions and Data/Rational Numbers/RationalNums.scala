@@ -1,19 +1,19 @@
 class Rational(x: Int, y: Int){
-    def numer = x
-    def denom =y
+    def n = x
+    def d =y
 
-    def neg = new Rational(-this.numer, denom)
+    def neg = new Rational(-this.numer, d)
 
-    def sub(r:Rational) = new Rational(this.numer*r.denom - r.numer*this.denom, this.denom*r.denom)
+    def sub(r:Rational) = new Rational(this.n*r.d - r.n*this.d, this.d*r.d)
 
     def -(r:Rational)=this.sub(r);
 
-    override def toString = numer + "/" + denom
+    override def toString = n + "/" + d
 }
 
 object RationalNums extends App{
-    val x= new Rational(3,4)
-    val y= new Rational(5,8)
-    val z= new Rational(2,7)
+    val x= new Rational(6, 8)
+    val y= new Rational(5, 9)
+    val z= new Rational(4, 13)
     println((x-y-z).toString())
 }
