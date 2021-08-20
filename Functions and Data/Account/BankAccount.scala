@@ -35,7 +35,7 @@ object BankAccount extends App{
     }
     println("\n\nSUM OF ACCOUNT BALANCES:- "+balance(bank).accBal)
 
-    println("\nFINAL BALANCES WITH INTEREST:-")
+    println("\nBALANCES WITH INTEREST:-")
     interest(bank)
     for(el<-bank)
     {
