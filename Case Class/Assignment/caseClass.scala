@@ -4,6 +4,7 @@ object CaseClass extends App{
     val p3 = p2.copy()
     val p4 = p1.move(2,3)
 
+    printf("\n\n------Testing-----\n\n")
     println(p1)
     println(p2)
 
@@ -13,10 +14,17 @@ object CaseClass extends App{
     println(p3)
     println(p4)
 
-    printf("------Question 1-----\n")
+    printf("\n\n------Question 1-----\n")
     val p5 = p1+p4
-
     println(p5)
+
+    printf("\n\n------Question 2-----\n")
+
+    printf("\n\n------Question 3-----\n")
+
+    printf("\n\n------Question 4-----\n")
+
+
 
 }
 
