@@ -19,16 +19,19 @@ object CaseClass extends App{
     println(p5)
 
     printf("\n\n------Question 2-----\n")
-
+    
+    printf("%s Move by %s ---> %s", Point(2,4), Point(4,8), Point(2,4).move(4,8))
 
     printf("\n\n------Question 3-----\n")
 
+    val distance = (a:Point, b:Point) => Math.sqrt((Math.pow((a.x - b.x), 2) + Math.pow((a.y - b.y), 2)).toDouble) //Third Question
+    printf("Distance between %s and %s -> %s", Point(10,20), Point(30,25), distance(Point(10,20), Point(30,25)))
+
+
     printf("\n\n------Question 4-----\n")
-    println(Point(2,4))
+
     printf("%s --->Invert--> %s", Point(2,4), Point(2,4).invert)
-    println(Point(2,4).invert)
-
-
+    println("\n")
 }
 
 case class Point(a:Int, b:Int){
@@ -40,8 +43,6 @@ case class Point(a:Int, b:Int){
     def move(dx:Int, dy:Int) = Point(this.x+dx, this.y+dy) // second Question
 
     def +(that:Point) = Point(this.x+that.x, this.y+that.y) //First question
-
-    val distance = (a:Point, b:Point) => Math.sqrt((Math.pow((a.x - b.x), 2) + Math.pow((a.y - b.y), 2)).toDouble) //Third Question
 
     def invert :Point = Point(this.y, this.x) // 4th Question
 }
