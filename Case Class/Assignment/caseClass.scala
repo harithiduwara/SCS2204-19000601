@@ -1,34 +1,32 @@
-object caseClass extends App{
-    val p1 = new Point(2, 3)
-    val p2 = new Point(2, 3)
+object CaseClass extends App{
+    val p1 = Point(2, 3)
+    val p2 = Point(2, 3)
+    val p3 = p2.copy()
+    val p4 = p1.move(2,3)
 
     println(p1)
     println(p2)
 
-    println(p1==p2) //It compare addresses
+    println(p1==p2) 
     println(p1!=p2)
-
-    val p3 = new Pointt(2, 3)
-    val p4 = new Pointt(2, 3)
 
     println(p3)
     println(p4)
 
-    println(p3==p4) //it compare values
-    println(p3!=p4)
+    printf("------Question 1-----\n")
+    val p5 = p1+p4
+
+    println(p5)
+
 }
 
-class Point(a:Int, b:Int){
+case class Point(a:Int, b:Int){
     def x:Int=a
     def y:Int=b
 
-    override def toString = "("+x+","+y+")"
+    // override def toString = "("+x+","+y+")"
 
+    def move(dx:Int, dy:Int) = Point(this.x+dx, this.y+dy)
+    def +(that:Point) = Point(this.x+that.x, this.y+that.y) //First question
 }
 
-class Pointt(a:Int, b:Int){
-    def x:Int=a
-    def y:Int=b
-
-    override def toString = "("+x+","+y+")"
-}
